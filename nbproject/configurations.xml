@@ -4,6 +4,8 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>../CppApplication_1/grain_size_statistics.h</itemPath>
+      <itemPath>../CppApplication_1/tessellation.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,7 +14,9 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>main.cpp</itemPath>
+      <itemPath>../CppApplication_1/grain_size_statistics.cpp</itemPath>
+      <itemPath>../CppApplication_1/main.cpp</itemPath>
+      <itemPath>../CppApplication_1/tessellation.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -35,8 +39,28 @@
         <rebuildPropChanged>true</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <commandLine>-std=c++11</commandLine>
+        </ccTool>
       </compileType>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="../CppApplication_1/grain_size_statistics.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../CppApplication_1/grain_size_statistics.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../CppApplication_1/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../CppApplication_1/tessellation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../CppApplication_1/tessellation.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -59,7 +83,24 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="../CppApplication_1/grain_size_statistics.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../CppApplication_1/grain_size_statistics.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../CppApplication_1/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../CppApplication_1/tessellation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../CppApplication_1/tessellation.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

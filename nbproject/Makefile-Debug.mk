@@ -35,15 +35,17 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/_ext/865002670/grain_size_statistics.o \
+	${OBJECTDIR}/_ext/865002670/main.o \
+	${OBJECTDIR}/_ext/865002670/tessellation.o
 
 
 # C Compiler Flags
 CFLAGS=
 
 # CC Compiler Flags
-CCFLAGS=
-CXXFLAGS=
+CCFLAGS=-std=c++11
+CXXFLAGS=-std=c++11
 
 # Fortran Compiler Flags
 FFLAGS=
@@ -62,10 +64,20 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cppapplication_2: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cppapplication_2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/main.o: nbproject/Makefile-${CND_CONF}.mk main.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/_ext/865002670/grain_size_statistics.o: nbproject/Makefile-${CND_CONF}.mk ../CppApplication_1/grain_size_statistics.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/865002670
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/865002670/grain_size_statistics.o ../CppApplication_1/grain_size_statistics.cpp
+
+${OBJECTDIR}/_ext/865002670/main.o: nbproject/Makefile-${CND_CONF}.mk ../CppApplication_1/main.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/865002670
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/865002670/main.o ../CppApplication_1/main.cpp
+
+${OBJECTDIR}/_ext/865002670/tessellation.o: nbproject/Makefile-${CND_CONF}.mk ../CppApplication_1/tessellation.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/865002670
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/865002670/tessellation.o ../CppApplication_1/tessellation.cpp
 
 # Subprojects
 .build-subprojects:
